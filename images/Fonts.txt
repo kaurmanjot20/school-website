@@ -1,0 +1,1 @@
+Fonts used in this design: \r\n\r\nThird party Fonts: \r\n\r\nFont: Bebas Neue \r\nAuthor: Ryoichi Tsunekawa \r\nUrl: https://fonts.google.com/specimen/Bebas+Neue \r\n\r\nFont: Poppins \r\nAuthor: Indian Type Foundry,Jonny Pinhorn \r\nUrl: https://fonts.google.com/specimen/Poppins \r\n\r\n
