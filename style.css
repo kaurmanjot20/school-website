@@ -306,6 +306,7 @@ header img {
         flex-flow: row nowrap;
         gap: 0.5rem;
 }
+
 .mentor figcaption{
     font-weight: bolder;
     font-size: 2rem;
