@@ -56,6 +56,11 @@ textarea {
     --HEADER-COLOR: #000;
     --PROJECTS-COLOR: #000;
     --PROJECTS-H2-COLOR: #FFF;
+    --MENTOR-H2-COLOR: #FFF;
+    --MENTOR-CARD-BGCOLOR: #FFF;
+    --MENTOR-CARD-COLOR: #000;
+    --ACHIEVEMENTS-H2-COLOR: #000;
+    --ACHIEVEMENTS-BGCOLOR: #FFF;
     --HERO-BGCOLOR: #FFF;
     --HERO-COLOR: #000;
     --HIGHLIGHT-COLOR: rgb(51, 178, 51);
@@ -123,8 +128,6 @@ a:active {
 }
 
 /* HEADER */
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -174,7 +177,8 @@ header img {
 }
 
 /* HERO SECTION */
-.hero {
+.hero,
+ .achievements {
     padding: 2.5rem;
     background-color: var(--HERO-BGCOLOR);
     color: var(--HERO-COLOR);
@@ -184,7 +188,8 @@ header img {
     overflow: hidden; /* Prevent content overflow */
     position: relative; /* Establish positioning context */
 }
-.container {
+.container,
+.achievements__container {
     width: 100%;
     margin: 0 auto;
     border: none;
@@ -193,17 +198,20 @@ header img {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-.hero__img{
+.hero__img,
+.achievements__img{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 20px;
 }
-.hero img {
+.hero img,
+.achievements__img img {
     width: 18rem;
 }
-.hero__text {
+.hero__text,
+.achievements__text {
     text-align: center;
     width: 75rem;
     margin: 5rem;
@@ -211,7 +219,8 @@ header img {
  }
 
 /* PROJECTS SECTION*/
-.projects {
+.projects,
+.mentor {
     padding: 2.5rem;
     background-color: var(--PROJECTS-BGCOLOR);
     color: var(--PROJECTS-COLOR);
@@ -219,7 +228,8 @@ header img {
     width: 100%;
     position: relative; /* Establish positioning context */
 }
-.projects h2 {
+.projects h2,
+.mentor h2 {
     color: var(--PROJECTS-H2-COLOR);
     text-align: center;
 }
@@ -240,7 +250,7 @@ header img {
 .card{
     scroll-margin-top: 8rem ;
     width: min(100%, 350px);
-    background-color: #cbd5e1;
+    background-color: #FFF;
     border: 2px solid #000;
     border-radius: 15px;
     padding: 1rem;
@@ -255,8 +265,8 @@ header img {
 }
 
 .card img{
-    border: 5px double #333;
-    border-radius: 50%;
+    border: 2px double #000;
+    border-radius: 15px;
 }
 
 .card figcaption{
@@ -266,6 +276,48 @@ header img {
     text-align: center;
 } 
 
+/* ACHIEVEMENTS SECTION */
+
+.achievements__img{
+    flex-direction: row-reverse;
+}
+
+ .achievements__h2 {
+    text-align: center;
+    color: var(--ACHIEVEMENTS-H2-COLOR);
+ }
+
+ /* MENTOR SECTION*/
+.mentor .mentor__profile {
+    background-color: var(--MENTOR-CARD-BGCOLOR);
+    border-radius: 20px;
+    padding: 2rem;
+}
+.mentor img {
+    border-radius: 50%;
+}
+.mentor .mentor__text {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+.mentor .mentor__card {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.5rem;
+}
+.mentor figcaption{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+} 
+/* FOOTER */
+footer{
+    bottom: 0;
+}
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 576px){
     .project__cards{
         justify-content: center;
@@ -285,9 +337,7 @@ header img {
     .card{
         width: min(100%, 325px);
     }
-    .card figure{
-        flex-flow: column-reverse;
-    }
+    
     .card figcaption{
         margin: 0.1em 0;
     }
@@ -325,17 +375,13 @@ and (min-aspect-ratio: 7/4) {
     }
 }
 
-
-footer{
-    bottom: 0;
-}
-
- /* MEDIA QUERIES */
  @media (max-width: 50rem) {
     body {
         margin: 0 auto;
     }
-    .hero__img {
+    .hero__img,
+    .achievements__img,
+    .mentor__img {
       max-width: 600px;
       height: 450px;
       flex-direction: column;
@@ -343,18 +389,20 @@ footer{
       align-items: center;
     }
   
-    .hero img {
-      width: 50%;
-    }
+    
   
-    .hero__text {
+    .hero__text,
+    .achievements__text,
+    .mentor__text {
     padding: auto;
-    width: 50%;
-    margin:2rem;
+    width: 90%;
+    margin:2%;
     height: 700px;
     }
 
-    .container {
+    .container,
+    .achievements__container,
+    .mentor__container {
         margin-top: 5rem;
     }
 }
@@ -368,12 +416,3 @@ footer{
         display: flex; /* Show the hamburger menu */
       }
     }
-
-@media (max-width: 481px) {  
-      .hero img {
-        display: none;
-      }
-      .hero .hero__text {
-        transform: translateY(-4.5rem);
-      }
-}
