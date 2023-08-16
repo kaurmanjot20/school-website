@@ -506,3 +506,64 @@ and (min-aspect-ratio: 7/4) {
         padding: 1rem 0; /* Add padding to the text */
     }
 }
+
+/* ****************************** */
+/* Media Query Adjustments */
+@media (max-width: 725px) {
+    /* ... (Other existing styles) ... */
+
+    /* Adjust container margins for smaller screens */
+    .container,
+    .achievements__container,
+    .mentor__container {
+        margin-top: 2rem; /* Adjust as needed */
+    }
+
+    /* Adjust image and text layouts for smaller screens */
+    .hero__img,
+    .achievements__img,
+    .mentor__img,
+    .hero__text,
+    .achievements__text,
+    .mentor__text {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin: 0; /* Remove margin */
+        padding: 1rem; /* Add padding for spacing */
+    }
+}
+
+/* Additional Media Queries */
+@media screen and (max-width: 576px) {
+    /* Adjust padding for small screens */
+    .hero,
+    .projects,
+    .achievements,
+    .mentor {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Adjust padding for even smaller screens */
+    .hero,
+    .projects,
+    .achievements,
+    .mentor {
+        padding: 1rem;
+    }
+
+    /* Adjust font size for smaller screens */
+    .hero h2,
+    .projects h2,
+    .achievements h2,
+    .mentor h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust font size for card captions on smaller screens */
+    .card figcaption {
+        font-size: 1.2rem;
+    }
+}
