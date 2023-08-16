@@ -177,8 +177,7 @@ header img {
 }
 
 /* HERO SECTION */
-.hero,
- .achievements {
+.hero {
     padding: 2.5rem;
     background-color: var(--HERO-BGCOLOR);
     color: var(--HERO-COLOR);
@@ -188,8 +187,7 @@ header img {
     overflow: hidden; /* Prevent content overflow */
     position: relative; /* Establish positioning context */
 }
-.container,
-.achievements__container {
+.container {
     width: 100%;
     margin: 0 auto;
     border: none;
@@ -198,20 +196,17 @@ header img {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-.hero__img,
-.achievements__img{
+.hero__img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 20px;
 }
-.hero img,
-.achievements__img img {
+.hero img {
     width: 18rem;
 }
-.hero__text,
-.achievements__text {
+.hero__text {
     text-align: center;
     width: 75rem;
     margin: 5rem;
@@ -219,8 +214,7 @@ header img {
  }
 
 /* PROJECTS SECTION*/
-.projects,
-.mentor {
+.projects {
     padding: 2.5rem;
     background-color: var(--PROJECTS-BGCOLOR);
     color: var(--PROJECTS-COLOR);
@@ -228,8 +222,7 @@ header img {
     width: 100%;
     position: relative; /* Establish positioning context */
 }
-.projects h2,
-.mentor h2 {
+.projects h2 {
     color: var(--PROJECTS-H2-COLOR);
     text-align: center;
 }
@@ -277,7 +270,45 @@ header img {
 } 
 
 /* ACHIEVEMENTS SECTION */
+.achievements {
+    padding: 2.5rem;
+    background-color: var(--HERO-BGCOLOR);
+    color: var(--HERO-COLOR);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevent content overflow */
+    position: relative; /* Establish positioning context */
+}
 
+.achievements__container {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.achievements__img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.achievements__img img {
+    width: 18rem;
+}
+
+.achievements__text {
+    text-align: center;
+    width: 75rem;
+    margin: 5rem;
+    margin-right: 3rem;
+ }
 .achievements__img{
     flex-direction: row-reverse;
 }
@@ -288,12 +319,26 @@ header img {
  }
 
  /* MENTOR SECTION*/
+.mentor {
+    padding: 2.5rem;
+    background-color: var(--PROJECTS-BGCOLOR);
+    color: var(--PROJECTS-COLOR);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+    width: 100%;
+    position: relative; /* Establish positioning context */
+}
+.mentor h2 {
+    color: var(--PROJECTS-H2-COLOR);
+    text-align: center;
+}
 .mentor .mentor__profile {
     background-color: var(--MENTOR-CARD-BGCOLOR);
     border-radius: 20px;
     padding: 2rem;
 }
 .mentor img {
+    width:  31rem;
+    height: 31rem;
     border-radius: 50%;
 }
 .mentor .mentor__text {
@@ -417,3 +462,47 @@ and (min-aspect-ratio: 7/4) {
         display: flex; /* Show the hamburger menu */
       }
     }
+
+    /* Default styles for screens larger than or equal to 1024px */
+.mentor {
+    padding: 2.5rem;
+    background-color: var(--PROJECTS-BGCOLOR);
+    color: var(--PROJECTS-COLOR);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+    width: 100%;
+    position: relative;
+}
+
+/* Styles for screens between 768px and 1023px */
+@media (max-width: 1023px) {
+    .mentor {
+        padding: 2rem; /* Reduce padding */
+    }
+
+    .mentor .mentor__card {
+        flex-flow: column nowrap; /* Stack the content vertically */
+        text-align: center;
+    }
+
+    .mentor img {
+        width: 15rem; /* Adjust image size */
+        height: 15rem;
+        margin: 0 auto; /* Center the image */
+    }
+}
+
+/* Styles for screens below 768px */
+@media (max-width: 767px) {
+    .mentor .mentor__card {
+        padding: 1rem; /* Decrease card padding */
+    }
+
+    .mentor figcaption {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .mentor .mentor__text {
+        text-align: left; /* Align text to the left */
+        padding: 1rem 0; /* Add padding to the text */
+    }
+}
