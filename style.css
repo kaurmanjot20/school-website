@@ -52,10 +52,14 @@ textarea {
     --BUTTON-COLOR: #FFF;
     --FONT-COLOR: #000;
     --HEADER-BGCOLOR: #F79824;
+    --FOOTER-BGCOLOR: #F79824;
     --PROJECTS-BGCOLOR: #F79824;
     --HEADER-COLOR: #000;
+    --FOOTER-COLOR: #FFF;
+    --FOOTER-H3-COLOR: #FFF;
     --PROJECTS-COLOR: #000;
     --PROJECTS-H2-COLOR: #FFF;
+    --FOOTER-H3-COLOR: #FFF;
     --MENTOR-H2-COLOR: #FFF;
     --MENTOR-CARD-BGCOLOR: #FFF;
     --MENTOR-CARD-COLOR: #000;
@@ -351,16 +355,97 @@ header img {
         flex-flow: row nowrap;
         gap: 0.5rem;
 }
-
 .mentor figcaption{
     font-weight: bolder;
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
 } 
+.mentor .socials a img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+}
+
 /* FOOTER */
 footer{
     bottom: 0;
+}
+
+.footer {
+    
+    padding: 20px;
+    background-color: var(--FOOTER-BGCOLOR);
+    color: var(--FOOTER-COLOR);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
+.footer h3 {
+    color: var(--FOOTER-H3-COLOR);
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute content evenly */
+}
+.contact,
+.links {
+    flex: 1; /* Allow each column to take equal space */
+}
+.contact h3,
+.links h3 {
+    margin-bottom: 10px;
+}
+.box {
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+.contact p,
+.links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    line-height: 1rem;
+  }
+  .links a {
+    position: relative;
+    left: -10rem;
+  }
+.contact img,
+.links img,
+.dev img {
+    width: 1.5rem;
+    margin-right: 5px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.dev{
+    line-height: 2rem;
+}
+.dev .copyright {
+    font-weight: 900;
+}
+.dev .myName {
+    font-weight: 600;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    text-decoration: none;
+}
+.footer .lastLine {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
 
 /* MEDIA QUERIES */
@@ -483,6 +568,12 @@ and (min-aspect-ratio: 7/4) {
         padding: 1rem; /* Add padding for spacing */
     }
 }
+
+.mentor .socials a img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
     
 
 
@@ -538,8 +629,42 @@ and (min-aspect-ratio: 7/4) {
     .card figcaption {
         font-size: 1.2rem;
     }
+
+
+    .footer {
+        padding: 15px;
+    }
+
+    /* Center align the entire footer content */
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust margin for small screens */
+    .box {
+        margin: 2rem auto;
+    }
+
+    /* Center align the contact and links sections */
+    .contact,
+    .links {
+        text-align: center;
+    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Adjust margin for medium screens */
+    .box {
+        margin: 1.5rem auto;
+    }
+
+    /* Adjust the flex-direction for medium screens */
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /* Additional Media Queries */
 @media screen and (max-width: 576px) {
     /* Adjust padding for small screens */
