@@ -400,18 +400,11 @@ footer{
     margin: 0 auto;
     padding: 1.5rem;
 }
-.contact p,
-.links a {
+.contact p {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-}
-.links {
-    display: flex;
-    flex-direction: row;
-    line-height: 1rem;
-  }
-  
+} 
 .contact img,
 .links img,
 .dev img {
@@ -420,8 +413,17 @@ footer{
 }
 .links {
     display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+}
+.school__links {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.links a {
+    text-decoration: none;
 }
 .dev{
     line-height: 2rem;
@@ -437,9 +439,7 @@ footer{
     flex-direction: column;
 }
 
-.links a {
-    text-decoration: none;
-}
+
 .footer .lastLine {
     font-weight: bolder;
     display: flex;
