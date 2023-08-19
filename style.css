@@ -140,15 +140,13 @@ a:active {
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header img {
     width:3rem
-}
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 .header__nav {
     display: flex;
