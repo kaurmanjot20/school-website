@@ -351,9 +351,10 @@ header img {
     align-self: center;
 }
 .mentor .mentor__card {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0.5rem;
+    display: flex;
+    flex-direction: column; /* Change to column */
+    align-items: center; /* Center align content */
+    gap: 1rem; /* Add spacing between elements */
 }
 .mentor figcaption{
     font-weight: bolder;
@@ -687,5 +688,22 @@ and (min-aspect-ratio: 7/4) {
     .achievements,
     .mentor {
         padding: 1.5rem;
+    }
+}
+
+@media screen and (max-length: 425px)
+and (min-aspect-ratio: 7/4) {
+    
+    .mentor{
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .mentor__profile{
+        width: min(calc(33% - 0.25rem), 200px);
+    }
+    .mentor__profile figcaption,
+    .mentor__profile p{
+        font-size: 1.25rem;
     }
 }
