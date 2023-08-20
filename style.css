@@ -447,6 +447,12 @@ footer{
     justify-content: center;
 }
 
+/*for nav menu*/
+.show {
+    display: block !important;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px){
     .project__cards{
