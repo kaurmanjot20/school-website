@@ -422,8 +422,8 @@ footer{
 .school__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2rem;
+    gap: 1rem;
+    margin: 1rem;
 }
 .links a {
     text-decoration: none;
