@@ -10,7 +10,7 @@
     <header class="header">
         <img src="images\8914653.png" alt="lab logo" class="logo">
         <nav class="header__nav">
-            <ul class="header__ul">
+            <ul class="header__ul" id="navList">
                 <li>
                     <a href="#projects">Projects</a>
                 </li>
@@ -21,7 +21,7 @@
                     <a href="#mentor">Mentor</a>
                 </li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id=""hamburger"">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -159,12 +159,19 @@
             <div class="dev">
             <span class="nowrap copyright">Copyright &copy; ATL Shiwalik Rupnagar</span><br>
             <span class="nowrap">Made by <span class="myName">Manjot Kaur</span></span><br>
-            <span class="nowrap"><a href="www.twitter.com"><img src="images/twitter (1).png" alt=""></a></span>
+            <span class="nowrap"><a href="https://twitter.com/kaurmanjot20"><img src="images/twitter (1).png" alt=""></a></span>
             </div>
         </div>
         <p class="lastLine">Made with &#10084;&#65039; and &#9749;</p>
     </footer>
-
+    <script>
+        const hamburger = document.getElementById("hamburger");
+            const navList = document.getElementById("navList");
+            
+            hamburger.addEventListener("click", () => {
+                navList.classList.toggle("show");
+            });
+    </script>
 
 </body>
 </html>
