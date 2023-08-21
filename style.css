@@ -133,6 +133,7 @@ a:active {
 
 /* HEADER */
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,36 +147,43 @@ a:active {
 }
 
 header img {
-    width:3rem
+    width: 3rem
 }
+
 .header__nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .header__ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 .header__ul li {
     margin-right: 4rem;
     text-transform: uppercase;
 }
+
 .header__ul li:last-child {
     margin-right: 2rem;
 }
+
 .header__ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
+
 .bar {
     width: 25px;
     height: 3px;
@@ -191,9 +199,12 @@ header img {
     box-shadow: 0 0 10px var(--BORDER-COLOR);
     width: 100%;
     height: 100vh;
-    overflow: hidden; /* Prevent content overflow */
-    position: relative; /* Establish positioning context */
+    overflow: hidden;
+    /* Prevent content overflow */
+    position: relative;
+    /* Establish positioning context */
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -202,7 +213,8 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
 .hero__img {
     display: flex;
     flex-direction: row;
@@ -210,15 +222,17 @@ header img {
     justify-content: space-between;
     padding: 20px;
 }
+
 .hero img {
     width: 18rem;
 }
+
 .hero__text {
     text-align: center;
     width: 75rem;
     margin: 5rem;
     margin-right: 3rem;
- }
+}
 
 /* PROJECTS SECTION*/
 .projects {
@@ -227,13 +241,16 @@ header img {
     color: var(--PROJECTS-COLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
     width: 100%;
-    position: relative; /* Establish positioning context */
+    position: relative;
+    /* Establish positioning context */
 }
+
 .projects h2 {
     color: var(--PROJECTS-H2-COLOR);
     text-align: center;
 }
-    .project__cards {
+
+.project__cards {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -241,14 +258,15 @@ header img {
     gap: 1.5rem;
     padding: 1rem;
 }
+
 .projects img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.card{
-    scroll-margin-top: 8rem ;
+.card {
+    scroll-margin-top: 8rem;
     width: min(100%, 350px);
     background-color: #FFF;
     border: 2px solid #000;
@@ -259,22 +277,22 @@ header img {
     align-items: center;
 }
 
-.card figure{
+.card figure {
     display: flex;
     flex-flow: column nowrap;
 }
 
-.card img{
+.card img {
     border: 2px double #000;
     border-radius: 15px;
 }
 
-.card figcaption{
+.card figcaption {
     font-weight: bolder;
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
-} 
+}
 
 /* ACHIEVEMENTS SECTION */
 .achievements {
@@ -284,8 +302,10 @@ header img {
     box-shadow: 0 0 10px var(--BORDER-COLOR);
     width: 100%;
     height: 100vh;
-    overflow: hidden; /* Prevent content overflow */
-    position: relative; /* Establish positioning context */
+    overflow: hidden;
+    /* Prevent content overflow */
+    position: relative;
+    /* Establish positioning context */
 }
 
 .achievements__container {
@@ -296,9 +316,9 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
-.achievements__img{
+.achievements__img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -315,56 +335,68 @@ header img {
     width: 75rem;
     margin: 5rem;
     margin-right: 3rem;
- }
-.achievements__img{
+}
+
+.achievements__img {
     flex-direction: row-reverse;
 }
 
- .achievements__h2 {
+.achievements__h2 {
     text-align: center;
     color: var(--ACHIEVEMENTS-H2-COLOR);
- }
+}
 
- /* MENTOR SECTION*/
+/* MENTOR SECTION*/
 .mentor {
     padding: 2.5rem;
     background-color: var(--PROJECTS-BGCOLOR);
     color: var(--PROJECTS-COLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
     width: 100%;
-    position: relative; /* Establish positioning context */
+    position: relative;
+    /* Establish positioning context */
 }
+
 .mentor h2 {
     color: var(--PROJECTS-H2-COLOR);
     text-align: center;
 }
+
 .mentor .mentor__profile {
     background-color: var(--MENTOR-CARD-BGCOLOR);
     border-radius: 20px;
     padding: 2rem;
 }
+
 .mentor img {
-    width:  31rem;
+    width: 31rem;
     height: 31rem;
     border-radius: 50%;
 }
+
 .mentor .mentor__text {
     text-align: center;
     justify-self: center;
     align-self: center;
 }
+
 .mentor .mentor__card {
     display: flex;
-    flex-direction: column; /* Change to column */
-    align-items: center; /* Center align content */
-    gap: 1rem; /* Add spacing between elements */
+    flex-direction: column;
+    /* Change to column */
+    align-items: center;
+    /* Center align content */
+    gap: 1rem;
+    /* Add spacing between elements */
 }
-.mentor figcaption{
+
+.mentor figcaption {
     font-weight: bolder;
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
-} 
+}
+
 .mentor .socials a img {
     width: 3.5rem;
     height: 3.5rem;
@@ -372,168 +404,187 @@ header img {
 }
 
 /* FOOTER */
-footer{
+footer {
     bottom: 0;
 }
 
 .footer {
-    
+
     padding: 20px;
     background-color: var(--FOOTER-BGCOLOR);
     color: var(--FOOTER-COLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
 }
+
 .footer h3 {
     color: var(--FOOTER-H3-COLOR);
 }
+
 .box {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Distribute content evenly */
+    justify-content: space-between;
+    /* Distribute content evenly */
 }
+
 .contact,
 .links {
-    flex: 1; /* Allow each column to take equal space */
+    flex: 1;
+    /* Allow each column to take equal space */
 }
+
 .contact h3,
 .links h3 {
     margin-bottom: 10px;
 }
+
 .box {
     margin: 0 auto;
     padding: 1.5rem;
 }
+
 .contact p {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-} 
+}
+
 .contact img,
 .links img,
 .dev img {
     width: 1.5rem;
     margin-right: 5px;
 }
+
 .links {
     display: flex;
     flex-direction: column;
     line-height: 1rem;
 }
+
 .school__links {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin: 1rem;
 }
+
 .links a {
     text-decoration: none;
 }
-.dev{
+
+.dev {
     line-height: 2rem;
 }
+
 .dev .copyright {
     font-weight: 900;
 }
+
 .dev .myName {
     font-weight: 600;
 }
+
 .contact {
     display: flex;
     flex-direction: column;
 }
+
 .footer .lastLine {
     font-weight: bolder;
     display: flex;
     justify-content: center;
 }
 
-/*for nav menu*/
-.show {
-    display: block !important;
-}
+
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 576px){
-    .project__cards{
+@media screen and (min-width: 576px) {
+    .project__cards {
         justify-content: center;
         flex-flow: row wrap;
         padding: 1rem;
     }
-    .card{
+
+    .card {
         width: min(100%, 400px);
     }
-    .card:target{
-    border: 3px solid rebeccapurple;
-}
+
+    .card:target {
+        border: 3px solid rebeccapurple;
+    }
 }
 
-@media screen and (min-width: 768px){
-    
-    .card{
+@media screen and (min-width: 768px) {
+
+    .card {
         width: min(100%, 325px);
     }
-    
-    .card figcaption{
+
+    .card figcaption {
         margin: 0.1em 0;
     }
-    .card p{
+
+    .card p {
         margin-top: 1rem;
     }
 }
 
-@media screen and (min-width: 992px){
-    .card{
+@media screen and (min-width: 992px) {
+    .card {
         width: min(100%, 400px);
     }
 }
 
-@media screen and (min-width: 1200px){
-    .card{
+@media screen and (min-width: 1200px) {
+    .card {
         width: min(calc(33% - 1rem), 500px);
     }
 }
 
-@media screen and (max-length: 425px)
-and (min-aspect-ratio: 7/4) {
-    
-    .project__cards{
+@media screen and (max-length: 425px) and (min-aspect-ratio: 7/4) {
+
+    .project__cards {
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: stretch;
     }
-    .card{
+
+    .card {
         width: min(calc(33% - 0.25rem), 200px);
     }
+
     .card figcaption,
-    .card p{
+    .card p {
         font-size: 1.25rem;
     }
 }
 
- @media (max-width: 50rem) {
+@media (max-width: 50rem) {
     body {
         margin: 0 auto;
     }
+
     .hero__img,
     .achievements__img,
     .mentor__img {
-      max-width: 600px;
-      height: 450px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+        max-width: 600px;
+        height: 450px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-  
-    
-  
+
+
+
     .hero__text,
     .achievements__text,
     .mentor__text {
-    padding: auto;
-    width: 90%;
-    margin:2%;
-    height: 700px;
+        padding: auto;
+        width: 90%;
+        margin: 2%;
+        height: 700px;
     }
 
     .container,
@@ -544,19 +595,62 @@ and (min-aspect-ratio: 7/4) {
 }
 
 @media (max-width: 725px) {
+
+    /* Changed elements by Herman */
+    /*for nav menu*/
     .header__ul {
-        display: none; /* Hide navigation links */
-      }
-    
-      .hamburger {
-        display: flex; /* Show the hamburger menu */
-      }
+        transform: translateY(99%);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-height: 0;
+        width: 100%;
+        text-align: center;
+        background-color: var(--PROJECTS-BGCOLOR);
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+
+        /* display: none; */
+        /* Hide navigation links */
+    }
+
+    .header__ul.show {
+        /* display: block !important; */
+        max-height: 500px;
+    }
+
+    .header__ul li {
+        padding: 1rem 0;
+        width: 100%;
+
+    }
+
+    /* This put's a border below every list-item but the last one */
+    .header__ul li:not(:last-child) {
+        border-bottom: 4px solid var(--BODY-BGCOLOR);
+    }
+
+    /* I prevent the user from scrolling when the menu is opened, this is not mandotary, I just think it's better for User-experience */
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    /* End of changed elements by Herman */
+
+    .hamburger {
+        display: flex;
+        /* Show the hamburger menu */
+    }
 
     /* Adjust container margins for smaller screens */
     .container,
     .achievements__container,
     .mentor__container {
-        margin-top: 2rem; /* Adjust as needed */
+        margin-top: 2rem;
+        /* Adjust as needed */
     }
 
     /* Adjust image and text layouts for smaller screens */
@@ -569,9 +663,13 @@ and (min-aspect-ratio: 7/4) {
         max-width: 100%;
         width: 100%;
         text-align: center;
-        margin: 0; /* Remove margin */
-        padding: 1rem; /* Add padding for spacing */
+        margin: 0;
+        /* Remove margin */
+        padding: 1rem;
+        /* Add padding for spacing */
     }
+
+
 }
 
 .mentor .socials a img {
@@ -579,41 +677,50 @@ and (min-aspect-ratio: 7/4) {
     height: 2rem;
     margin-top: 1rem;
 }
-    
+
 
 
 /* Styles for screens between 768px and 1023px */
 @media (max-width: 1023px) {
     .mentor {
-        padding: 2rem; /* Reduce padding */
+        padding: 2rem;
+        /* Reduce padding */
     }
 
     .mentor .mentor__card {
-        flex-flow: column nowrap; /* Stack the content vertically */
+        flex-flow: column nowrap;
+        /* Stack the content vertically */
         text-align: center;
     }
 
     .mentor img {
-        width: 15rem; /* Adjust image size */
+        width: 15rem;
+        /* Adjust image size */
         height: 15rem;
-        margin: 0 auto; /* Center the image */
+        margin: 0 auto;
+        /* Center the image */
     }
 }
 
 /* Styles for screens below 768px */
 @media (max-width: 767px) {
     .mentor .mentor__card {
-        padding: 1rem; /* Decrease card padding */
+        padding: 1rem;
+        /* Decrease card padding */
     }
 
     .mentor figcaption {
-        font-size: 1.5rem; /* Adjust font size */
+        font-size: 1.5rem;
+        /* Adjust font size */
     }
 
     .mentor .mentor__text {
-        text-align: left; /* Align text to the left */
-        padding: 1rem 0; /* Add padding to the text */
+        text-align: left;
+        /* Align text to the left */
+        padding: 1rem 0;
+        /* Add padding to the text */
     }
+
     /* Adjust padding for even smaller screens */
     .hero,
     .projects,
@@ -634,8 +741,8 @@ and (min-aspect-ratio: 7/4) {
     .card figcaption {
         font-size: 1.2rem;
     }
-    
-    
+
+
     .footer {
         padding: 15px;
     }
@@ -645,25 +752,32 @@ and (min-aspect-ratio: 7/4) {
         flex-direction: column;
         align-items: center;
     }
+
     .contact {
         text-align: center;
-        margin-top: 1rem; /* Add some top margin for spacing */
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
     }
+
     .dev {
         text-align: center;
-        margin-top: 1rem; /* Add some top margin for spacing */
-        margin-bottom: 1rem; /* Add some bottom margin for spacing */
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
+        margin-bottom: 1rem;
+        /* Add some bottom margin for spacing */
     }
+
     .links {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
+
     /* Reduce the margin between links on small screens */
     .links a {
         margin: 5px 0;
     }
+
     /* Adjust margin for small screens */
     .box {
         margin: 2rem auto;
@@ -675,7 +789,9 @@ and (min-aspect-ratio: 7/4) {
         text-align: center;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     /* Adjust margin for medium screens */
     .box {
         margin: 1.5rem auto;
@@ -687,8 +803,10 @@ and (min-aspect-ratio: 7/4) {
         align-items: center;
     }
 }
+
 /* Additional Media Queries */
 @media screen and (max-width: 576px) {
+
     /* Adjust padding for small screens */
     .hero,
     .projects,
@@ -698,19 +816,20 @@ and (min-aspect-ratio: 7/4) {
     }
 }
 
-@media screen and (max-length: 425px)
-and (min-aspect-ratio: 7/4) {
-    
-    .mentor{
+@media screen and (max-length: 425px) and (min-aspect-ratio: 7/4) {
+
+    .mentor {
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: stretch;
     }
-    .mentor__profile{
+
+    .mentor__profile {
         width: min(calc(33% - 0.25rem), 200px);
     }
+
     .mentor__profile figcaption,
-    .mentor__profile p{
+    .mentor__profile p {
         font-size: 1.25rem;
     }
 }
