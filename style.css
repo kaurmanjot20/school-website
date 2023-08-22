@@ -590,8 +590,8 @@ footer {
         padding: auto;
         width: 90%;
         margin: 2%;
-        /* ! I used a min-height instead of height here *Herman */
-        min-height: 700px;
+        /* ! I deleted the height here *Herman */
+        /* min-height: 700px; */
     }
 
     .container,
