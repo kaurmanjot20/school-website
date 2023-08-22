@@ -198,7 +198,8 @@ header img {
     color: var(--HERO-COLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
     width: 100%;
-    height: 100vh;
+    /* !Changed height to min-height *Herman */
+    min-height: 100vh;
     overflow: hidden;
     /* Prevent content overflow */
     position: relative;
@@ -209,10 +210,11 @@ header img {
     width: 100%;
     margin: 0 auto;
     border: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* !Postion: asbolute will make the element float on top of other elements *Herman */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .hero__img {
@@ -301,7 +303,8 @@ header img {
     color: var(--HERO-COLOR);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
     width: 100%;
-    height: 100vh;
+    /* !I used a min-height instead of height again *Herman */
+    min-height: 100vh;
     overflow: hidden;
     /* Prevent content overflow */
     position: relative;
@@ -312,10 +315,11 @@ header img {
     width: 100%;
     margin: 0 auto;
     border: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* !Position: asbolute will make the element float on top of other elements *Herman */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .achievements__img {
@@ -325,6 +329,7 @@ header img {
     justify-content: space-between;
     padding: 20px;
 }
+
 
 .achievements__img img {
     width: 18rem;
@@ -570,7 +575,8 @@ footer {
     .achievements__img,
     .mentor__img {
         max-width: 600px;
-        height: 450px;
+        /* ! I used a min-height instead of height here *Herman */
+        min-height: 450px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -584,7 +590,8 @@ footer {
         padding: auto;
         width: 90%;
         margin: 2%;
-        height: 700px;
+        /* ! I deleted the height here *Herman */
+        /* min-height: 700px; */
     }
 
     .container,
