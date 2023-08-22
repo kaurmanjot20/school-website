@@ -1,25 +1,4 @@
-/* #F79824
-#A9ACA9
-#0A0908 
-#2176FF
-#FFFC31
-
-Futura, Crimson, Open Sans, Avenir, Lato, Interstate, Noto Sans, Elena, Graphik, Sofia Pro, Proxima Nova, or Benton Sans.
-
-font-family: 'Abril Fatface', cursive;
-font-family: 'Caprasimo', cursive;
-font-family: 'Crimson Pro', serif;
-font-family: 'Fraunces', serif;
-font-family: 'Fugaz One', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Crimson+Pro:wght@200&family=Fraunces:wght@500&family=Fugaz+One&family=Lato:ital,wght@0,400;1,300&family=Montserrat:wght@300&family=Noto+Sans&family=Nunito&family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Crimson+Pro:wght@200&family=Fraunces:wght@500&family=Fugaz+One&family=Lato:ital,wght@0,400;1,300&family=Montserrat:wght@300&family=Noto+Sans&family=Nunito&family=Open+Sans&family=PT+Sans:wght@700&family=Roboto&display=swap');
 
 /* RESET  */
 *,
@@ -39,8 +18,8 @@ textarea {
 /* VARIABLES */
 :root {
     /* FONTS */
-    --FF: "Noto Sans", sans-serif;
-    --FF-HEADINGS: "Fugaz One", cursive;
+    --FF: 'Roboto', sans-serif;
+    --FF-HEADINGS: 'PT Sans', sans-serif;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
@@ -106,6 +85,7 @@ h2,
 h3 {
     font-family: var(--FF-HEADINGS);
     letter-spacing: 0.1em;
+    font-weight: bolder;
 }
 
 h2,
