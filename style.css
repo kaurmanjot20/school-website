@@ -811,6 +811,54 @@ footer {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        padding: 15px;
+    }
+
+    /* Center align the entire footer content */
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        text-align: center;
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
+    }
+
+    .dev {
+        text-align: center;
+        margin-top: 1rem;
+        /* Add some top margin for spacing */
+        margin-bottom: 1rem;
+        /* Add some bottom margin for spacing */
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Reduce the margin between links on small screens */
+    .links a {
+        margin: 5px 0;
+    }
+
+    /* Adjust margin for small screens */
+    .box {
+        margin: 2rem auto;
+    }
+
+    /* Center align the contact and links sections */
+    .contact,
+    .links {
+        text-align: center;
+    }
+}
+
 /* Additional Media Queries */
 @media screen and (max-width: 576px) {
 
