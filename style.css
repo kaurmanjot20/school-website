@@ -147,7 +147,9 @@ a:active {
 }
 
 header img {
-    width: 12rem
+    padding-left: 0;
+    margin-left: 0;
+    width: 9rem;
 }
 
 .header__nav {
@@ -812,6 +814,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .header__ul li {
+        margin-right: 1.5rem;
+    }
     .footer {
         padding: 15px;
     }
