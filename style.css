@@ -543,7 +543,7 @@ footer {
     }
 }
 
-@media screen and (max-length: 425px) and (min-aspect-ratio: 7/4) {
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
 
     .project__cards {
         flex-flow: row nowrap;
