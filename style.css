@@ -854,9 +854,8 @@ footer {
     .mentor {
         padding: 1.5rem;
     }
-}
 
-@media screen and (max-length: 425px) and (min-aspect-ratio: 7/4) {
+
 
     .mentor {
         flex-flow: row nowrap;
