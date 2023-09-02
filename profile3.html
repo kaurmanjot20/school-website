@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/settings (1).png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/settings (1).png" type="image/x-icon">
+        <title>ATL SPS Rupnagar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="images/websiteLogo.png" alt="lab logo" class="logo">
+        <nav class="header__nav">
+            <ul class="header__ul" id="navList">
+                <li>
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#achievements">Achievements</a>
+                </li>
+                <li>
+                    <a href="index.html#mentor">Mentor</a>
+                </li>
+            </ul>
+            <!-- Quotes where not place right -->
+            <!-- <div class="hamburger" id=""hamburger""> -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog">
+      <div class="blogContainer">
+        <h2>ESP8266 based smart alarm clock</h2>
+        <img src="images/ESP8266 based smart alarm clock _ xubec HQ.png" alt="smart clock">
+        <h3>Introduction</h3>
+        <p>The ESP8266-based smart alarm clock project is a comprehensive endeavor aimed at resolving multiple issues related to household lighting, alarm functionality, and weather information. This blog post will delve into the project's objectives, components, circuit design, and software aspects.</p>
+        <h3>Objectives</h3>
+        <p>
+            <ul>
+                <li>Shifting lighting control from light switches to smartphone</li>
+                <li>Enhanced functionality with a more sophisticated device with additional features.</li>
+                <li>Display the time in a user-friendly manner.</li>
+                <li>Wake the user up gently using sounds and a simulated sunrise.</li>
+                <li>Provide weather forecast information for better planning.</li>
+                <li>Incorporate adjustable display brightness for nighttime use.</li>
+                <li>Enable remote control of bedroom lights via MQTT.</li>
+                <li>Offer easy configuration through a web interface.</li>
+                <li>Automatically synchronize time using NTP.</li>
+                <li>Ensure an aesthetically pleasing design for household acceptance.</li>
+
+            </ul>
+        </p>
+        <h3>Components</h3>
+        <p>
+            <ul>
+                <li>Wemos D1 Mini (ESP8266-based microcontroller).</li>
+                <li>0.96" Dual-color OLED display for weather forecasts.</li>
+                <li>Blue 7-segment clock display with I2C interface.</li>
+                <li>Liquid Crystal Light Valve for adjustable display dimming.</li>
+                <li>TIP120 MOSFET transistors for RGB+W LED strip control.</li>
+                <li>RGB+W LED Strip (reused from a previous project).</li>
+                <li>Blue ring 3.3V push button for snooze and smart switch.</li>
+                <li>Three small push buttons for manual alarm time setting.</li>
+                <li>Assorted resistors for voltage dividers (ranging from 10K to 1K).</li>
+                <li>A 20K potentiometer with a knob.</li>
+                <li>12V / 1.5A power supply (repurposed from a USB hard drive).</li>
+                <li>DC power jack for power input.</li>
+            </ul>
+        </p>
+        <h3>Circuit Diagram</h3>
+        <img src="images/ESP8266 based smart alarm clock _ xubec HQ (1).png" alt="circuit Diagram">
+        <img src="images/ESP8266 based smart alarm clock _ xubec HQ (2).png" alt="circuit diagram 2">
+        <p>
+            <ul>
+                <li>Power Supply: A 12V/1.5A input is converted to 5V using a voltage regulator to power the Wemos D1 Mini. It also supplies power to the RGB+W LED strip.</li>
+                <li>LED Strip Control: The circuit regulates the intensity of each color in the RGB+W LED strip based on commands received from the Wemos D1 Mini via GPIOs.</li>
+                <li>Video Bus: This block manages the I2C bus that connects both the OLED and 7-segment displays.</li>
+                <li>Alarm and Snooze: Includes a buzzer for alarm functionality and a snooze button to stop the alarm.</li>
+                <li>Alarm Time Setting: Three buttons allow manual adjustment of the alarm time.</li>
+                <li>Controllable Shutter Glass: A potentiometer controls the translucency of the liquid crystal light valve.</li>
+            </ul>
+        </p>
+        <h3>Software</h3>
+        <p>The project's software can be found in the<a href="https://github.com/pfiol/alarm_clock"> GitHub repository</a>, specifically designed for the ESP8266 Arduino IDE. It's essential to use the latest version (2.4.2) to avoid issues with the "tone" and "analogWrite" functions, as earlier versions exhibited undesirable behavior.</p>
+        <h3>Web Interface</h3>
+        <p>A user-friendly web interface developed for configuring the alarm clock, featuring tabs for alarm settings, timezone selection, MQTT setup, Weather Underground API integration, and manual control of LED backlighting.</p>
+        <h3>Source of Inspiration</h3>
+        <p> This project is inspired from Pedro Fiol</p>
+        <p>Pedro Fiol is an IT engineer based in Barcelona currently working for ADP. Nowadays he is working on the Business Applications department as a software engineer and solution architect mainly developing web based applications for the company with different technologies including AngularJS, JAVA, and other programming languages.</p> 
+
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="box">
+            <div class="links">
+                <div>
+                    <h3>Connect with us</h3>
+                </div>
+                <div class="school__links">
+                    <a href="https://www.facebook.com/people/Shiwalik-Rupnagar/pfbid02DKmUvwAMcUHGP6RzHLg3gKkUFQkdTviFKvjn7aZE5pB6QvV5ZwHna9NfThVKmwjtl/?mibextid=ZbWKwL" target="_blank">
+                        <img src="images/facebook (2).png" alt="facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@ShiwalikRupnagar" target="_blank">
+                        <img src="images/youtube (1).png" alt="youtube">
+                    </a>
+                    <a href="https://www.spsrupnagar.com/" target="_blank">
+                        <img src="images/global.png" alt="website">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Reach out to us</h3>
+                <p><img src="images/phone-call.png"> <a href="tel:01881220215">01881220215</a></p>
+                <p><img src="images/email.png"> <a href="mailto:spsrupnagar@gmail.com">spsrupnagar@gmail.com</a></p>
+            </div>
+            <div class="dev">
+                <span class="nowrap copyright">Copyright &copy; ATL SPS Rupnagar</span><br>
+                <span class="nowrap">Made by <span class="myName">Manjot Kaur</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/kaurmanjot20" target="_blank"><img
+                            src="images/twitter (1).png" alt="twitter"></a></span>
+            </div>
+        </div>
+        <p class="lastLine">Made with &#10084;&#65039; and &#9749;</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navList = document.getElementById("navList");
+
+        hamburger.addEventListener("click", () => {
+            navList.classList.toggle("show");
+            document.documentElement.classList.toggle("no-scroll");
+        });
+    </script>
+</body>
+</html>
