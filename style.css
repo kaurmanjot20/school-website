@@ -24,15 +24,15 @@ textarea {
 
     /* COLORS */
     --BGCOLOR-FADE: rgb(252, 220, 160);
-    --BGCOLOR: #F79824;
+    --BGCOLOR: #e8ba24;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --BORDER-COLOR: #333;
     --BUTTON-COLOR: #FFF;
     --FONT-COLOR: #000;
-    --HEADER-BGCOLOR: #F79824;
-    --FOOTER-BGCOLOR: #F79824;
-    --PROJECTS-BGCOLOR: #F79824;
+    --HEADER-BGCOLOR: #e8ba24;
+    --FOOTER-BGCOLOR: #e8ba24;
+    --PROJECTS-BGCOLOR: #e8ba24;
     --HEADER-COLOR: #000;
     --FOOTER-COLOR: #FFF;
     --FOOTER-H3-COLOR: #FFF;
@@ -276,6 +276,14 @@ header img {
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
+}
+.card button {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 15px;
 }
 
 /* ACHIEVEMENTS SECTION */
