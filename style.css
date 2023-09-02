@@ -491,9 +491,46 @@ footer {
     justify-content: center;
 }
 
-
-
-
+/* blog section*/
+.blog {
+    padding: 2.5rem;
+    background-color: var(--HERO-BGCOLOR);
+    color: var(--HERO-COLOR);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+    width: 100%;
+    /* !Changed height to min-height *Herman */
+    min-height: 100vh;
+    overflow: hidden;
+    /* Prevent content overflow */
+    position: relative;
+    /* Establish positioning context */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.blog .blogContainer {
+    width: 29rem;
+}
+.blog img {
+    width: 100%;
+    max-width: 20rem;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    margin: 2rem;
+    border: 2px solid #000;
+}
+.blog h2 {
+    text-decoration: underline double;
+}
+.blog p,
+.blog ul {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.blog a {
+    color: #6a2dc6;
+}
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
     .project__cards {
