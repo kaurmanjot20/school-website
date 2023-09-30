@@ -218,6 +218,20 @@ header img {
     margin-right: 3rem;
 }
 
+.hero .typewriter-text{
+    overflow: hidden; /* Hide overflow content */
+    border-right: 2px solid #000; /* Blinking cursor effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.hero .typewriter-text h2 {
+    display: inline-block; /* Display text inline for animation */
+    margin: 0;
+    padding: 0;
+}
+
 /* PROJECTS SECTION*/
 .projects {
     padding: 2.5rem;
@@ -530,6 +544,7 @@ footer {
 }
 .blog a {
     color: #6a2dc6;
+    text-decoration: none;
 }
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
