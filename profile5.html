@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/settings (1).png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/settings (1).png" type="image/x-icon">
+        <title>ATL SPS Rupnagar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="images/websiteLogo.png" alt="lab logo" class="logo">
+        <nav class="header__nav">
+            <ul class="header__ul" id="navList">
+                <li>
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#achievements">Achievements</a>
+                </li>
+                <li>
+                    <a href="index.html#mentor">Mentor</a>
+                </li>
+            </ul>
+            <!-- Quotes where not place right -->
+            <!-- <div class="hamburger" id=""hamburger""> -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog">
+      <div class="blogContainer">
+        <h2>IOT Smart Plant Monitoring System</h2>
+        <img src="images/plantMonitor.webp">
+        <h3>Introduction</h3>
+        <p> This project aimed at harnessing the power of IoT to create an intelligent and user-friendly solution for monitoring the health and growth of plants. This system integrates sensors, connectivity, and data analysis to provide real-time insights into a plant's environmental conditions, enabling users to make informed decisions and ensure the optimal care of their plants.</p>
+        <h3>Objectives</h3>
+        <p>
+            <ul>
+                <li>Develop a system that can continuously monitor key environmental parameters crucial for plant growth, such as soil moisture, temperature, humidity, and light intensity.</li>
+                <li> Implement sensors to collect data from the plant's surroundings and create a robust data analysis mechanism to interpret this data. Use this analysis to provide insights into the plant's health and well-being.</li>
+                <li>Enable users to access real-time plant data remotely through a user-friendly interface, such as a mobile app or web dashboard. This feature allows plant owners to monitor their plants' status anytime, anywhere.</li>
+                <li>Implement an alerting system that notifies users when the monitored parameters fall outside of predefined ranges. This feature ensures timely action to prevent plant stress or damage.</li>
+                <li>Consider making the system suitable for educational and research purposes to encourage learning about plant biology, environmental science, and IoT technology.</li>
+            </ul>
+        </p>
+        <h3>Components</h3>
+        <p>
+            <ul>
+                <li>Nodemcu ESP8266</li>
+                <li>Soil Moisture Sensor</li>
+                <li>PIR Motion Sensor</li> 
+                <li>Relay</li>
+                <li>BreadBoard</li>
+                <li>Jumpers</li>
+                <li>18650 Battery</li>
+                <li>Tactile Push Button</li>
+                <li>Water Pump</li>
+            </ul>
+        </p>
+        <h3>Circuit Diagram</h3>
+        <img src="images/circuitdia5.webp">
+        
+       
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="box">
+            <div class="links">
+                <div>
+                    <h3>Connect with us</h3>
+                </div>
+                <div class="school__links">
+                    <a href="https://www.facebook.com/people/Shiwalik-Rupnagar/pfbid02DKmUvwAMcUHGP6RzHLg3gKkUFQkdTviFKvjn7aZE5pB6QvV5ZwHna9NfThVKmwjtl/?mibextid=ZbWKwL" target="_blank">
+                        <img src="images/facebook (2).png" alt="facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@ShiwalikRupnagar" target="_blank">
+                        <img src="images/youtube (1).png" alt="youtube">
+                    </a>
+                    <a href="https://www.spsrupnagar.com/" target="_blank">
+                        <img src="images/global.png" alt="website">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Reach out to us</h3>
+                <p><img src="images/phone-call.png"> <a href="tel:01881220215">01881220215</a></p>
+                <p><img src="images/email.png"> <a href="mailto:spsrupnagar@gmail.com">spsrupnagar@gmail.com</a></p>
+            </div>
+            <div class="dev">
+                <span class="nowrap copyright">Copyright &copy; ATL SPS Rupnagar</span><br>
+                <span class="nowrap">Made by <span class="myName">Manjot Kaur</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/kaurmanjot20" target="_blank"><img
+                            src="images/twitter (1).png" alt="twitter"></a></span>
+            </div>
+        </div>
+        <p class="lastLine">Made with &#10084;&#65039; and &#9749;</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navList = document.getElementById("navList");
+
+        hamburger.addEventListener("click", () => {
+            navList.classList.toggle("show");
+            document.documentElement.classList.toggle("no-scroll");
+        });
+    </script>
+</body>
+</html>
