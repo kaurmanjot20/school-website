@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/settings (1).png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/settings (1).png" type="image/x-icon">
+        <title>ATL SPS Rupnagar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="images/websiteLogo.png" alt="lab logo" class="logo">
+        <nav class="header__nav">
+            <ul class="header__ul" id="navList">
+                <li>
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#achievements">Achievements</a>
+                </li>
+                <li>
+                    <a href="index.html#mentor">Mentor</a>
+                </li>
+            </ul>
+            <!-- Quotes where not place right -->
+            <!-- <div class="hamburger" id=""hamburger""> -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog">
+      <div class="blogContainer">
+        <h2>An experimental magnetic loop antenna with a stepper motor and an Arduino</h2>
+        <img src="images/loopAntenna.jpg" alt="smart clock">
+       
+        <p>Ham radio allows for the broadcast and reception of non-commercial radio signals across vast distances with relatively inexpensive equipment. As the name implies, ham radio relies on antennas to function, and most designs can take up large amounts of space. An alternative antenna is the magnetic loop design which has a tall circle of copper tubing around the outside while each end is soldered onto a variable capacitor that is used to tune the signal.</p>
+       
+        <p>This project was inspired by Kevin Loughin’s <a href="https://youtu.be/J2QBQ45C0b0">YouTube video</a> on the design and TechMakerUK's own <a href="https://www.instructables.com/An-Experimental-Magnetic-Loop-Driven-by-Android-an/">experimental version </a>capable of 5W transmissions, which he could tune via an Android phone. The variable capacitor is from an old valve radio and has a central shaft that rotates to adjust the distance between the dielectric plates. In order to turn the coupling, a 5V stepper motor was added to the base along with a ULN2003 stepper motor driver. The driver was then connected to an Arduino Uno, although the board was replaced by a Nano Every for soldered connections.</p>
+
+        <p>In terms of usage, there is a digital encoder that increments the count either up or down depending on the direction it is rotated in, and this dictates how far the stepper should move. Calibrating the “zero” or home position is done by slowly moving the stepper on initialization until it hits a limit switch.</p>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="box">
+            <div class="links">
+                <div>
+                    <h3>Connect with us</h3>
+                </div>
+                <div class="school__links">
+                    <a href="https://www.facebook.com/people/Shiwalik-Rupnagar/pfbid02DKmUvwAMcUHGP6RzHLg3gKkUFQkdTviFKvjn7aZE5pB6QvV5ZwHna9NfThVKmwjtl/?mibextid=ZbWKwL" target="_blank">
+                        <img src="images/facebook (2).png" alt="facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@ShiwalikRupnagar" target="_blank">
+                        <img src="images/youtube (1).png" alt="youtube">
+                    </a>
+                    <a href="https://www.spsrupnagar.com/" target="_blank">
+                        <img src="images/global.png" alt="website">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Reach out to us</h3>
+                <p><img src="images/phone-call.png"> <a href="tel:01881220215">01881220215</a></p>
+                <p><img src="images/email.png"> <a href="mailto:spsrupnagar@gmail.com">spsrupnagar@gmail.com</a></p>
+            </div>
+            <div class="dev">
+                <span class="nowrap copyright">Copyright &copy; ATL SPS Rupnagar</span><br>
+                <span class="nowrap">Made by <span class="myName">Manjot Kaur</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/kaurmanjot20" target="_blank"><img
+                            src="images/twitter (1).png" alt="twitter"></a></span>
+            </div>
+        </div>
+        <p class="lastLine">Made with &#10084;&#65039; and &#9749;</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navList = document.getElementById("navList");
+
+        hamburger.addEventListener("click", () => {
+            navList.classList.toggle("show");
+            document.documentElement.classList.toggle("no-scroll");
+        });
+    </script>
+</body>
+</html>
