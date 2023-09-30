@@ -40,7 +40,9 @@
             <div class="hero__img">
                 <img src="images\college project-cuate.png" alt="students working on a project">
                 <div class="hero__text">
-                    <h2>Atal Tinkering Lab</h2>
+                    <div class="typewriter-text">
+                        <h2></h2>
+                    </div>
                     <h3>Shiwalik Public School, Rupnagar</h3>
                     <p>We are dedicated to nurturing young minds into innovative thinkers and creators. Our aim is to
                         instill a sense of curiosity and a passion for innovation in students through hands-on projects
@@ -63,7 +65,7 @@
                     </figure>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam molestiae, quisquam
                         tempore fuga deleniti alias vel sed soluta id.</p>
-                        <a href=""><button>Read More</button></a>
+                        <a href="" target="_blank"><button>Read More</button></a>
                 </article>
 
                 <article id="profile2" class="card">
@@ -73,46 +75,44 @@
                     </figure>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam molestiae, quisquam
                         tempore fuga deleniti alias vel sed soluta id.</p>
-                        <a href=""><button>Read More</button></a>
+                        <a href="" target="_blank"><button>Read More</button></a>
                 </article>
 
                 <article id="profile3" class="card">
                     <figure>
-                        <img src="images/ESP8266 based smart alarm clock _ xubec HQ.png" alt="Sarah Nguyen" width="500" height="500">
+                        <img src="images/ESP8266 based smart alarm clock _ xubec HQ.png" alt="ESP8266-based Smart Alarm Clock" width="500" height="500">
                         <figcaption>ESP8266-based Smart Alarm Clock</figcaption>
                     </figure>
-                    <p> Project aimed at resolving multiple issues related to household lighting, alarm functionality, and weather information..</p>
+                    <p> Project is aimed at resolving multiple issues related to household lighting, alarm functionality, and weather information..</p>
                         <a href="profile3.html" target="_blank"><button>Read More</button></a>
                 </article>
 
-                <article id="profile6" class="card">
+                <article id="profile4" class="card">
                     <figure>
                         <img src="images\Untitled design (1).png" alt=" Michael Anderson" width="500" height="500">
                         <figcaption> Michael <span class="nowrap">Anderson</span></figcaption>
                     </figure>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam molestiae, quisquam
                         tempore fuga deleniti alias vel sed soluta id.</p>
-                        <a href=""><button>Read More</button></a>
-                </article>
-
-                <article id="profile4" class="card">
-                    <figure>
-                        <img src="images\Untitled design (5).png" alt="David Martinez" width="500" height="500">
-                        <figcaption>David <span class="nowrap">Martinez</span></figcaption>
-                    </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam molestiae, quisquam
-                        tempore fuga deleniti alias vel sed soluta id.</p>
-                        <a href=""><button>Read More</button></a>
+                        <a href="" target="_blank"><button>Read More</button></a>
                 </article>
 
                 <article id="profile5" class="card">
                     <figure>
-                        <img src="images\Untitled design (2).png" alt="Jennifer Thompson" width="500" height="500">
-                        <figcaption>Jennifer <span class="nowrap">Thomps</span></figcaption>
+                        <img src="images/plantMonitor.webp" alt="IOT Smart Plant Monitoring System" width="500" height="500">
+                        <figcaption>IOT Smart Plant <span class="nowrap"> Monitoring System</span></figcaption>
                     </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam molestiae, quisquam
-                        tempore fuga deleniti alias vel sed soluta id.</p>
-                        <a href=""><button>Read More</button></a>
+                    <p> Project is aimed at harnessing the power of IoT to create an intelligent and user-friendly solution for monitoring the health and growth of plants. This system integrates sensors, connectivity, and data analysis to provide real-time insights into a plant's environmental conditions, enabling users to make informed decisions and ensure the optimal care of their plants..</p>
+                        <a href="profile5.html" target="_blank"><button>Read More</button></a>
+                </article>
+
+                <article id="profile6" class="card">
+                    <figure>
+                        <img src="images/loopAntenna.jpg" alt="magnetic loop antenna" width="500" height="500">
+                        <figcaption>Magnetic <span class="nowrap">Loop Antenna</span></figcaption>
+                    </figure>
+                    <p>The aim of this project is to develop an experimental magnetic loop antenna tuner utilizing Arduino technology. This tuner enhances the capabilities of ham radio transmissions while exploring creative solutions for household applications.</p>
+                        <a href="profile6.html" target="_blank"><button>Read More</button></a>
                 </article>
 
             </div>
@@ -142,7 +142,7 @@
             <article id="mentor__profile" class="mentor__profile">
                 <div class="mentor__card">
                     <figure>
-                        <img src="images\Untitled design (5).png" alt="Jennifer Thompson">
+                        <img src="images/4.png" alt="Jennifer Thompson">
                         <figcaption>Vineet <span class="nowrap">Verma</span></figcaption>
                     </figure>
 
@@ -203,6 +203,30 @@
             navList.classList.toggle("show");
             document.documentElement.classList.toggle("no-scroll");
         });
+
+        // Get the text element
+        const textElement = document.querySelector('.hero .typewriter-text h2');
+
+        // The text you want to animate
+        const textToType = "Atal Tinkering Lab";
+
+        // Speed of typing (adjust as needed)
+        const typingSpeed = 150; // in milliseconds
+
+        // Index to track the position in the text
+        let textIndex = 0;
+
+        function typeText() {
+            if (textIndex < textToType.length) {
+                textElement.textContent += textToType.charAt(textIndex);
+                textIndex++;
+                setTimeout(typeText, typingSpeed);
+            }
+        }
+
+        // Start the animation
+        typeText();
+
     </script>
 
 </body>
