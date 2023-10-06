@@ -298,6 +298,10 @@ header img {
     width: 10rem;
     height: 2rem;
     border-radius: 15px;
+    border: none;
+}
+.card button:hover{
+    cursor: pointer;
 }
 
 /* ACHIEVEMENTS SECTION */
@@ -545,6 +549,9 @@ footer {
 .blog a {
     color: #6a2dc6;
     text-decoration: none;
+}
+.blog video{
+    border-radius: 15px;
 }
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
