@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/settings (1).png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/settings (1).png" type="image/x-icon">
+        <title>ATL SPS Rupnagar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="images/websiteLogo.png" alt="lab logo" class="logo">
+        <nav class="header__nav">
+            <ul class="header__ul" id="navList">
+                <li>
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#achievements">Achievements</a>
+                </li>
+                <li>
+                    <a href="index.html#mentor">Mentor</a>
+                </li>
+            </ul>
+            <!-- Quotes where not place right -->
+            <!-- <div class="hamburger" id=""hamburger""> -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog">
+      <div class="blogContainer">
+        <h2>Light Sensing Robot</h2>
+        <img src="images/lightSensingRobo.jpg" alt="smart clock">
+        <h3>Introduction</h3>
+        <p>The robot is designed to detect and follow a light source using sensors and motors. The robot can navigate its surroundings independently, adjusting its movement based on the position of the light source. It also involves integrating light sensors with the robot's control system to enable accurate detection and tracking of the light source. The robot's motors are controlled to ensure smooth and precise movement in response to changes in the light source's position. The project serves as a hands-on introduction to robotics, electronics, and programming, providing an opportunity to learn about sensor integration and autonomous navigation.</p>
+
+        <h3>Objectives</h3>
+        <p>
+            <ul>
+                <li>Build a robot capable of detecting and following a light source.</li>
+                <li> Integrate light sensors and motors to enable accurate tracking and movement.</li>
+                <li>Develop an understanding of sensor integration, motor control, and autonomous navigation.</li>
+                <li>Gain practical experience in robotics, electronics, and programming.</li>
+                <li>Showcase the educational value of the project in teaching fundamental concepts in STEM fields.</li>
+                
+            </ul>
+        </p>
+
+        <h3>Key Project Features</h3>
+        <p>
+            <ul>
+                <li>Light Sensors: These sensors play a crucial role in detecting the light source and providing input to the robot's control system. They enable the robot to accurately track the light source's position.</li>
+                <li>Motors: The motors are responsible for the robot's movement. Precise control of the motors allows the robot to adjust its position and orientation in response to changes in the light source's location.</li>
+                <li> Microcontroller: The microcontroller serves as the brain of the robot, processing sensor data and controlling the motors. It enables the robot to make autonomous decisions based on the input received from the light sensors.</li>
+                <li> Chassis and Wheels: The chassis provides the structural support for the robot, while the wheels facilitate its movement. The design and construction of these components impact the robot's stability, maneuverability, and overall performance.</li>
+                <li>Power Supply: A reliable power supply is essential to ensure uninterrupted operation of the robot. It provides the necessary energy for the microcontroller, sensors, and motors to function effectively.</li>
+                
+            </ul>
+        </p>
+
+        <video width="320" height="240" controls>
+            <source src="images/roboVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="box">
+            <div class="links">
+                <div>
+                    <h3>Connect with us</h3>
+                </div>
+                <div class="school__links">
+                    <a href="https://www.facebook.com/people/Shiwalik-Rupnagar/pfbid02DKmUvwAMcUHGP6RzHLg3gKkUFQkdTviFKvjn7aZE5pB6QvV5ZwHna9NfThVKmwjtl/?mibextid=ZbWKwL" target="_blank">
+                        <img src="images/facebook (2).png" alt="facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@ShiwalikRupnagar" target="_blank">
+                        <img src="images/youtube (1).png" alt="youtube">
+                    </a>
+                    <a href="https://www.spsrupnagar.com/" target="_blank">
+                        <img src="images/global.png" alt="website">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Reach out to us</h3>
+                <p><img src="images/phone-call.png"> <a href="tel:01881220215">01881220215</a></p>
+                <p><img src="images/email.png"> <a href="mailto:spsrupnagar@gmail.com">spsrupnagar@gmail.com</a></p>
+            </div>
+            <div class="dev">
+                <span class="nowrap copyright">Copyright &copy; ATL SPS Rupnagar</span><br>
+                <span class="nowrap">Made by <span class="myName">Manjot Kaur</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/kaurmanjot20" target="_blank"><img src="images/twitter (1).png" alt="twitter"></a></span><br>
+                <span class="nowrap">Contributor: <span class="myName">Herman Popken</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/PopkenHerman" target="_blank"><img src="images/twitter (1).png" alt="twitter"></a></span>
+            </div>
+        </div>
+        <p class="lastLine">Made with &#10084;&#65039; and &#9749;</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navList = document.getElementById("navList");
+
+        hamburger.addEventListener("click", () => {
+            navList.classList.toggle("show");
+            document.documentElement.classList.toggle("no-scroll");
+        });
+    </script>
+</body>
+</html>

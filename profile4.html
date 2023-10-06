@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/settings (1).png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/settings (1).png" type="image/x-icon">
+        <title>ATL SPS Rupnagar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="images/websiteLogo.png" alt="lab logo" class="logo">
+        <nav class="header__nav">
+            <ul class="header__ul" id="navList">
+                <li>
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="index.html#achievements">Achievements</a>
+                </li>
+                <li>
+                    <a href="index.html#mentor">Mentor</a>
+                </li>
+            </ul>
+            <!-- Quotes where not place right -->
+            <!-- <div class="hamburger" id=""hamburger""> -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="blog">
+      <div class="blogContainer">
+        <h2>Wireless Smart Surveillance Camera with Pan and Tilt Motion</h2>
+        <img src="images/camera.jpeg" alt="smart clock">
+        <h3>Introduction</h3>
+        <p>This project showcases a cost-effective and versatile wireless surveillance camera system designed using an ESP32 CAM board. The camera features pan and tilt functionality, enabling it to cover a wide viewing angle. The body of the camera is constructed from durable sunmica wood and wrapped in sleek black vinyl, providing both functionality and aesthetics.</p>
+
+        <h3>Objectives</h3>
+        <p>
+            <ul>
+                <li>It offers an affordable solution for home security and monitoring needs.</li>
+                <li> Its user-friendly features, including wireless connectivity, pan and tilt control, night vision, and facial detection, make it a versatile choice for enhancing safety and surveillance at home.</li>
+                
+            </ul>
+        </p>
+
+        <h3>Key Project Features</h3>
+        <p>
+            <ul>
+                <li>Wireless Connectivity: The camera seamlessly connects to your home Wi-Fi network, allowing for remote access and control via a web browser. Simply enter its IP address to access the live feed.</li>
+                <li>Pan and Tilt Motion: The camera can be remotely controlled to pan and tilt, providing ﬂexible monitoring capabilities. This is achieved using servo motors for precise movement.</li>
+                <li> Night Vision: Equipped with a powerful white light, this camera ensures clear night vision, enhancing security even in low-light conditions.</li>
+                <li> IoT Integration: Integration with the Blynk IoT mobile app enables easy control and monitoring of the camera from your smartphone or tablet. This adds an extra layer of convenience and accessibility.</li>
+                <li>Facial Detection: The project's standout feature is its ability to perform facial detection, enhancing its security and surveillance capabilities.</li>
+                <li>Storage Options: Users have the ﬂexibility to store recorded footage either locally on an SD card or securely in the cloud. This choice provides convenience and ensures that valuable video data can be accessed and preserved according to individual preferences and requirements.</li>
+                
+            </ul>
+        </p>
+
+        <video width="320" height="240" controls>
+            <source src="images/cameraVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="box">
+            <div class="links">
+                <div>
+                    <h3>Connect with us</h3>
+                </div>
+                <div class="school__links">
+                    <a href="https://www.facebook.com/people/Shiwalik-Rupnagar/pfbid02DKmUvwAMcUHGP6RzHLg3gKkUFQkdTviFKvjn7aZE5pB6QvV5ZwHna9NfThVKmwjtl/?mibextid=ZbWKwL" target="_blank">
+                        <img src="images/facebook (2).png" alt="facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@ShiwalikRupnagar" target="_blank">
+                        <img src="images/youtube (1).png" alt="youtube">
+                    </a>
+                    <a href="https://www.spsrupnagar.com/" target="_blank">
+                        <img src="images/global.png" alt="website">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Reach out to us</h3>
+                <p><img src="images/phone-call.png"> <a href="tel:01881220215">01881220215</a></p>
+                <p><img src="images/email.png"> <a href="mailto:spsrupnagar@gmail.com">spsrupnagar@gmail.com</a></p>
+            </div>
+            <div class="dev">
+                <span class="nowrap copyright">Copyright &copy; ATL SPS Rupnagar</span><br>
+                <span class="nowrap">Made by <span class="myName">Manjot Kaur</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/kaurmanjot20" target="_blank"><img src="images/twitter (1).png" alt="twitter"></a></span><br>
+                <span class="nowrap">Contributor: <span class="myName">Herman Popken</span></span><br>
+                <span class="nowrap"><a href="https://twitter.com/PopkenHerman" target="_blank"><img src="images/twitter (1).png" alt="twitter"></a></span>
+            </div>
+        </div>
+        <p class="lastLine">Made with &#10084;&#65039; and &#9749;</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navList = document.getElementById("navList");
+
+        hamburger.addEventListener("click", () => {
+            navList.classList.toggle("show");
+            document.documentElement.classList.toggle("no-scroll");
+        });
+    </script>
+</body>
+</html>
