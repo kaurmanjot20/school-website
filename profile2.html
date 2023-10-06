@@ -35,14 +35,39 @@
 
     <section class="blog">
       <div class="blogContainer">
-        <h2>An experimental magnetic loop antenna with a stepper motor and an Arduino</h2>
-        <img src="images/loopAntenna.jpg" alt="smart clock">
-       
-        <p>Ham radio allows for the broadcast and reception of non-commercial radio signals across vast distances with relatively inexpensive equipment. As the name implies, ham radio relies on antennas to function, and most designs can take up large amounts of space. An alternative antenna is the magnetic loop design which has a tall circle of copper tubing around the outside while each end is soldered onto a variable capacitor that is used to tune the signal.</p>
-       
-        <p>This project was inspired by Kevin Loughin’s <a href="https://youtu.be/J2QBQ45C0b0">YouTube video</a> on the design and TechMakerUK's own <a href="https://www.instructables.com/An-Experimental-Magnetic-Loop-Driven-by-Android-an/">experimental version </a>capable of 5W transmissions, which he could tune via an Android phone. The variable capacitor is from an old valve radio and has a central shaft that rotates to adjust the distance between the dielectric plates. In order to turn the coupling, a 5V stepper motor was added to the base along with a ULN2003 stepper motor driver. The driver was then connected to an Arduino Uno, although the board was replaced by a Nano Every for soldered connections.</p>
+        <h2>Smart Solar Tracker with Arduino and LDR Sensor</h2>
+        <img src="images/Untitled design (2).png" alt="smart clock">
+        <h3>Introduction</h3>
+        <p>The project aims to harness the full potential of solar energy by developing an intelligent solar tracking system. Solar panels are most eﬃcient when they are perpendicular to the sun's rays. This project seeks to optimize energy generation by continuously aligning a solar panel with the sun's position throughout the day using an Arduino microcontroller and Light Dependent Resistor (LDR) sensors.</p>
+        <p>The system employs LDR sensors to detect changes in light intensity, allowing the Arduino to determine the sun's position in the sky. By processing this data, the Arduino controls a set of servo motors that adjust the solar panel's orientation to follow the sun's movement. This dynamic tracking capability ensures that the solar panel is always facing the sun, signiﬁcantly enhancing its energy harvesting eﬃciency.</p>
 
-        <p>In terms of usage, there is a digital encoder that increments the count either up or down depending on the direction it is rotated in, and this dictates how far the stepper should move. Calibrating the “zero” or home position is done by slowly moving the stepper on initialization until it hits a limit switch.</p>
+        <h3>Objectives</h3>
+        <p>
+            <ul>
+                <li>It offers an innovative approach to enhancing solar energy harvesting eﬃciency.</li>
+                <li>It provides a practical solution for increasing the output of solar panels and demonstrates the potential of renewable energy sources in addressing today's energy challenges.</li>
+                
+            </ul>
+        </p>
+
+        <h3>Key Project Features</h3>
+        <p>
+            <ul>
+                <li>LDR Sensor Array: LDR sensors are strategically positioned to provide accurate and real-time data on sunlight intensity and direction.</li>
+                <li>Arduino Control: An Arduino microcontroller processes the sensor data and calculates the optimal angle for the solar panel's orientation.</li>
+                <li>Servo Motors: Servo motors are used to physically adjust the position of the solar panel, ensuring it remains aligned with the sun throughout the day.</li>
+                <li>Energy Eﬃciency: The smart solar tracker maximizes energy generation by capturing more sunlight, which can lead to increased energy output compared to ﬁxed solar panels.</li>
+                <li>User Interface: The project may include a user-friendly interface, such as an LCD display or a smartphone app, to monitor the system's performance and make manual adjustments if necessary.</li>
+                <li>Sustainability: By optimizing solar panel orientation, this project contributes to reducing fossil fuel dependency and greenhouse gas emissions, promoting sustainable energy solutions.</li>
+                
+            </ul>
+        </p>
+
+        <video width="320" height="240" controls>
+            <source src="images\trackerVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
       </div>
     </section>
 
