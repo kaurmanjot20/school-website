@@ -95,10 +95,14 @@ p {
 }
 a:any-link {
     color: var(--LINK-COLOR);
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 a:hover,
 a:focus-visible {
     color: var(--LINK-HOVER);
+    transform: scale(1.25);
+    
 }
 a:active {
     color: var(--LINK-ACTIVE);
@@ -271,9 +275,14 @@ a:active {
     height: 2rem;
     border-radius: 15px;
     border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .card button:hover{
     cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black ;
+    transform: scale(1.05);
 }
 
 /* ACHIEVEMENTS SECTION */
@@ -495,6 +504,27 @@ footer {
 .blog video{
     border-radius: 15px;
 }
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out infinite;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 /* MEDIA QUERIES */
 @media screen and (min-width: 576px) {
     .project__cards {
