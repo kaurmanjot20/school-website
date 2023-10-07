@@ -488,11 +488,19 @@ footer {
     max-width: 20rem;
     aspect-ratio: 1;
     border-radius: 15px;
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
     border: 2px solid #000;
+}
+.blog figcaption{
+    margin: 0 2rem 2rem 2rem;
+    padding: 0;
+    color: #6a2dc6;
 }
 .blog h2 {
     text-decoration: underline double;
+}
+.blog h3 {
+    margin: 1.5rem;
 }
 .blog p,
 .blog ul {
@@ -504,8 +512,8 @@ footer {
 }
 .blog video{
     border-radius: 15px;
+    margin: 2rem 2rem 0 2rem
 }
-
 .lineUp {
     animation: 2s anim-lineUp ease-out infinite;
   }
