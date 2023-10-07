@@ -64,6 +64,7 @@ textarea {
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
+
 /* GENERAL STYLES  */
 html {
     scroll-behavior: smooth;
