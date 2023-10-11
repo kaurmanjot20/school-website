@@ -234,7 +234,8 @@ a:active {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+  /* This caused the issue with the cards height, because it tries to center all content end removes the whitespace because of it. */
     gap: 1.5rem;
     padding: 1rem;
 }
@@ -267,6 +268,10 @@ a:active {
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
+}
+/* To push the button to the bottom of the card, you can use flex grow to grow the content to fill up the empty space. */
+.card p {
+  flex-grow: 1;
 }
 .card button {
     background-color: black;
