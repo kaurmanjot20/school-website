@@ -504,6 +504,7 @@ footer {
 }
 .blog h2 {
     text-decoration: underline double;
+    margin: 2rem 2rem 0 2rem;
 }
 .blog h3 {
     margin: 1.5rem;
