@@ -488,7 +488,8 @@ footer {
 .blog .blogContainer {
     width: 29rem;
 }
-.blog img {
+.blog img ,
+.blog video{
     width: 100%;
     max-width: 20rem;
     aspect-ratio: 1;
@@ -515,10 +516,7 @@ footer {
     color: #6a2dc6;
     text-decoration: none;
 }
-.blog video{
-    border-radius: 15px;
-    margin: 2rem 2rem 0 2rem
-}
+
 .lineUp {
     animation: 2s anim-lineUp ease-out infinite;
   }
